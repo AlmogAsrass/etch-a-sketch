@@ -6,6 +6,7 @@
 }
 
 .container div {
+    box-sizing: border-box;
     border: .5px solid red;
     height: 20px;
     width: 20px;
