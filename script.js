@@ -31,7 +31,7 @@ btn.addEventListener('click', () => {
             div.style.cssText = `height: ${960 / userInput}px; width: ${960 / userInput}px`;
             div.addEventListener('mouseover', () => {
                 //div.classList.toggle('pixel')
-                div.style.backgroundColor = 'grey';
+                div.style.backgroundColor = 'black';
             })
         })
     }
