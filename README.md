@@ -1,0 +1,1 @@
+My goal with this project is to create something like Etch A Sketch toy using only HTML, CSS and Vanilla JS.
