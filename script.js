@@ -6,9 +6,9 @@ const btn = document.querySelector('.btn');
 
 btn.addEventListener('click', () => {
     let userInput;
-    userInput = Number(prompt('Enter a Number'));
-    if (userInput > 100) {
-        userInput = Number(prompt('Enter a Number between 1 and 100'));
+    userInput = Number(prompt('Choose your grid size!'));
+    if (userInput > 100 || userInput === 0 || userInput === 2) {
+        userInput = Number(prompt('Enter a Number between 2 and 100'));
     } else {
         for (let i = 0; i < userInput * userInput; i++) {
             divs.push(document.createElement('div'));
@@ -16,7 +16,7 @@ btn.addEventListener('click', () => {
         let darker = 100;
         divs.forEach((div) => {
             container.appendChild(div);
-            div.style.cssText = `height: ${960 / userInput}px; width: ${960 / userInput}px`;
+            div.style.cssText = `height: ${550 / userInput}px; width: ${550 / userInput}px`;
             div.addEventListener('mouseover', () => {
                 div.style.backgroundColor = `color-mix(in hsl, hsl(${randomColor()}, 100%, 50%) ${darker}%, black)`;
                 for (let i = 0; i < 10; i++) {
